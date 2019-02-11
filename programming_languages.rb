@@ -5,7 +5,7 @@ def reformat_languages(languages)
 # binding.pry
 # # # :oo => {} 
   language_hash.each do |language, attribute_hash|
-    #:type => {}
+    #:ruby => {}
     attribute_hash.each do |type, str|
       #interpreted or complied
       if new_hash[language].nil?
