@@ -13,8 +13,8 @@ def reformat_languages(languages)
       end 
         new_hash[language][:style] ||= []  #only assign to values that are not already been assign
         new_hash[language][:style] << style
-      if new_hash[attribute_hash][:attribute_hash].nil?
-        new_hash[language] = str
+      if new_hash[language][type].nil?
+        new_hash[language][type] = str
       end
     end 
   end 
