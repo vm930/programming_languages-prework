@@ -2,13 +2,10 @@ require "pry"
 def reformat_languages(languages)
   new_hash = {}
   
-  languages.each do |style,language_hash|
+  languages.each do |style,language_hash| # :oo => {} 
 # binding.pry
-# # # :oo => {} 
-  language_hash.each do |language, attribute_hash|
-    #:ruby => {}
-    attribute_hash.each do |type, str|
-      #interpreted or complied
+  language_hash.each do |language, attribute_hash|  #:ruby => {}
+    attribute_hash.each do |type, str| #:type => "complied"
       if new_hash[language].nil?
         new_hash[language] = {}
       end 
