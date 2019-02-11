@@ -7,7 +7,7 @@ def reformat_languages(languages)
   language_hash.each do |language, attribute_hash|  #:ruby => {}
     attribute_hash.each do |type, str| #:type => "complied"
       if new_hash[language].nil?
-        new_hash[language] = {}
+          new_hash[language] = {}
       end 
         new_hash[language][:style] ||= []  #only assign to values that are not already been assign
         new_hash[language][:style] << style
